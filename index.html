@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Music Company Database Management System</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <img src="Assets//Images/logo.png" class="logo">
+        <nav class="navigation">
+          <button class="login_btn">LOG IN</button>
+      </nav>
+      </header>
+      <div class="wrapper">
+        <span class="icon-close">
+          <ion-icon name="close-outline"></ion-icon>
+        </span>
+        <div class="form-box login">
+          <h2>Log In</h2>
+          <form action="connect.php" method="post">
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+              <input type="text" name="email" required> <!-- Add the name attribute for email -->
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="lock-closed-outline">
+                </ion-icon>
+              </span>
+              <input type="password" name="password" required> <!-- Add the name attribute for password -->
+              <label>Password</label>
+            </div>
+              <div class="remember-forget">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#forgotpassword">Forgot Password?</a>
+              </div>
+              <button type="submit" class="login-sub-btn" name="login-sub-btn">LOG IN</button>
+
+              <div class="login-Register">
+                <p>Don't have an account?<a href="#dhacc" class="register-link">Register</a></p>
+              </div>
+          </form>
+        </div>
+        
+        <div class="form-box register">
+          <h2>Registration</h2>
+          <form action="register.php" method="post">
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="person-outline"></ion-icon>
+              </span>
+              <input type="text" required name="fullname">
+              <label>Full Name</label>
+            </div>
+            <div class="input-box">
+              <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+              <input type="text" required name="email">
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <span class="icon">
+                <ion-icon name="lock-closed-outline">
+                </ion-icon>
+              </span>
+              <input type="password" required name="password">
+              <label>Password</label>
+            </div>
+              <div class="remember-forget">
+                <label><input type="checkbox">I agree to the terms & Conditions</label>
+              </div>
+              <button type="submit" class="login-sub-btn" name="register-sub-btn">REGISTER</button>
+              <!-- ^ Change the name attribute to "register-sub-btn" for registration button -->
+              <div class="login-Register">
+                <p>Already have an account?<a href="#login-form" class="login-link">Login</a></p>
+              </div>
+          </form>
+        </div>
+      </div>
+
+  <footer>
+    <p class="disclaimer">&copy; Developed by Ratikesh</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
